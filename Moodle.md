@@ -122,3 +122,11 @@ VALUES
 ('defaultpreference_autosubscribe', '1'), 
 ('defaultpreference_trackforums', '0'); 
 ```
+
+### 5. Error con el paquete de idiomas en español
+https://moodle.org/mod/forum/discuss.php?d=246152&parent=1068809
+
+```
+UPDATE `mdl_config` SET value="es" WHERE name="lang"
+UPDATE `mdl_user` SET lang="es" WHERE lang="es_ar"
+```
