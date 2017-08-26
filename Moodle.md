@@ -6,9 +6,9 @@ La lista de requerimientos se pueden ver dando [clic aqui](https://docs.moodle.o
 ### 1. Requerimientos del Servidor
 * Versión de PHP: minimo PHP 5.6.5 (¡importante! la versión mínima de PHP se ha incrementado desde Moodle 3.1)
 * Las extensiones PHP openssl y fileinfo ahora son necesarias en Moodle 3.3 (eran recomendadas en 3.2)
-* ~~ Soporte unicode completo para los detalles en MySQL/MariaDB. Puede ver las instruccines [dando clic aqui](https://docs.moodle.org/all/es/MySQL_soporte_unicode_completo) ~~
+* ~~Soporte unicode completo para los detalles en MySQL/MariaDB. Puede ver las instruccines [dando clic aqui](https://docs.moodle.org/all/es/MySQL_soporte_unicode_completo)~~
 
-~~ Incluir lo siguiente en su **my.cnf**: ~~
+~~Incluir lo siguiente en su **my.cnf**:~~
 
 ```
 [client]
@@ -26,8 +26,8 @@ collation-server = utf8mb4_unicode_ci
 [mysql]
 default-character-set = utf8mb4
 ```
-~~ Luego reiniciar el servidor mysql.~~
-~~ Tambien se recomienda crear la base de datos incluyendo el soporte total unicode, como sigue (suponiendo que su base de datos se llama "educacion"") [Mas informacion aqu](https://docs.moodle.org/33/en/MySQL#Creating_Moodle_database):~~
+~~Luego reiniciar el servidor mysql.~~
+~~Tambien se recomienda crear la base de datos incluyendo el soporte total unicode, como sigue (suponiendo que su base de datos se llama "educacion"") [Mas informacion aqu](https://docs.moodle.org/33/en/MySQL#Creating_Moodle_database):~~
 
 ```mysql
 CREATE DATABASE educacion DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
@@ -89,7 +89,7 @@ Una vez concluida la actualización de la base de datos
 - [x] Se migraron las tareas al modulo de la siguiente versión que no se migraron correctamente
 - [x] Se instala PHP 5.6.31 (Aunque Mooddle sugiere 5.6.5, ha funcionado bien)
 - [x] Acá es necesario actualizar el soporte de mysql a MySQL soporte unicode completo [https://docs.moodle.org/all/es/MySQL_soporte_unicode_completo]
-- [x] ~~ Se cambia el my.cnf con los siguientes valores: ~~ 
+- [x] ~~Se cambia el my.cnf con los siguientes valores:~~ 
 
 ```
 [client]
@@ -108,8 +108,8 @@ collation-server = utf8mb4_unicode_ci
 default-character-set = utf8mb4
 ```
 
-- [x] ~~ Además Moodle sugiere que se active el módulo intl de PHP ~~
-- [x] ~~ Sugiere además que tu sitio esté tenga cifrado SSL ~~
+- [x] ~~Además Moodle sugiere que se active el módulo intl de PHP~~
+- [x] ~~Sugiere además que tu sitio esté tenga cifrado SSL~~
 - [x] Se corre la actualización nuevamente
 - [x] Y sale un error configuraciones iniciales [https://tracker.moodle.org/browse/MDL-55757?focusedCommentId=451220&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-451220]
 
