@@ -6,9 +6,9 @@ La lista de requerimientos se pueden ver dando [clic aqui](https://docs.moodle.o
 ### 1. Requerimientos del Servidor
 * Versión de PHP: minimo PHP 5.6.5 (¡importante! la versión mínima de PHP se ha incrementado desde Moodle 3.1)
 * Las extensiones PHP openssl y fileinfo ahora son necesarias en Moodle 3.3 (eran recomendadas en 3.2)
-* Soporte unicode completo para los detalles en MySQL/MariaDB. Puede ver las instruccines [dando clic aqui](https://docs.moodle.org/all/es/MySQL_soporte_unicode_completo)
+* ~~ Soporte unicode completo para los detalles en MySQL/MariaDB. Puede ver las instruccines [dando clic aqui](https://docs.moodle.org/all/es/MySQL_soporte_unicode_completo) ~~
 
-Incluir lo siguiente en su **my.cnf**:
+~~ Incluir lo siguiente en su **my.cnf**: ~~
 
 ```
 [client]
@@ -26,11 +26,11 @@ collation-server = utf8mb4_unicode_ci
 [mysql]
 default-character-set = utf8mb4
 ```
-Luego reiniciar el servidor mysql.
-Tambien se recomienda crear la base de datos incluyendo el soporte total unicode, como sigue (suponiendo que su base de datos se llama "educacion"") [Mas informacion aqu](https://docs.moodle.org/33/en/MySQL#Creating_Moodle_database):
+~~ Luego reiniciar el servidor mysql.~~
+~~ Tambien se recomienda crear la base de datos incluyendo el soporte total unicode, como sigue (suponiendo que su base de datos se llama "educacion"") [Mas informacion aqu](https://docs.moodle.org/33/en/MySQL#Creating_Moodle_database):~~
 
 ```mysql
-CREATE DATABASE educacion DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE educacion DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 ```
 
 #### Requisitos de la Base de Datos
@@ -73,30 +73,25 @@ Si bien es cierto, Moodle sugiere que se use este modulo de PHP, el mismo ha que
 
 
 
-Acciones preliminares
+### 4. Acciones preliminares
 
-Se ha eliminado el lenguaje es_ar de la data y de la base de datos
-Se ha procedido a eliminar los plugins y temas rotos para la siguiente version
-Se ha instalado PHP 5.5.38
-Se ha usado MySQL 5.7.18
-Se ha creado la base de datos con soporte UTF8
-create database educacion; 
-ALTER DATABASE educacion DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
-
-Se ha importado la base de datos facilitada
-mysql -u root -p educacion < /PATH/DEL/ARCHIVO.sql
-
-Se ha procedido con la actualización desde linea de comando
-$ sudo /usr/bin/php admin/cli/maintenance.php --enable
-$ sudo /usr/bin/php admin/cli/upgrade.php
-$ sudo /usr/bin/php admin/cli/maintenance.php --disable
+- [x] Se ha eliminado el lenguaje es_ar de la data y de la base de datos
+- [x] Se ha procedido a eliminar los plugins y temas rotos para la siguiente version
+- [x] Se ha instalado PHP 5.5.38
+- [x] Se ha usado MySQL 5.7.18
+- [x] Se ha creado la base de datos con soporte UTF8
+- [x] Se ha importado la base de datos facilitada
+- [x] Se ha procedido con la actualización desde linea de comando
 
 Una vez concluida la actualización de la base de datos
-Se actualizaron los temas y módulos que requerian atención
-Se migraron las tareas al modulo de la siguiente versión que no se migraron correctamente
-Se instala PHP 5.6.31 (Aunque Mooddle sugiere 5.6.5, ha funcionado bien)
-Acá es necesario actualizar el soporte de mysql a MySQL soporte unicode completo [https://docs.moodle.org/all/es/MySQL_soporte_unicode_completo]
-Se cambia el my.cnf con los siguientes valores:
+
+- [x] Se actualizaron los temas y módulos que requerian atención
+- [x] Se migraron las tareas al modulo de la siguiente versión que no se migraron correctamente
+- [x] Se instala PHP 5.6.31 (Aunque Mooddle sugiere 5.6.5, ha funcionado bien)
+- [x] Acá es necesario actualizar el soporte de mysql a MySQL soporte unicode completo [https://docs.moodle.org/all/es/MySQL_soporte_unicode_completo]
+- [x] ~~ Se cambia el my.cnf con los siguientes valores: ~~ 
+
+```
 [client]
 default-character-set = utf8mb4
 
@@ -111,12 +106,12 @@ collation-server = utf8mb4_unicode_ci
 
 [mysql]
 default-character-set = utf8mb4
+```
 
-Además Moodle sugiere que se active el módulo intl de PHP
-Sugiere además que tu sitio esté tenga cifrado SSL
-
-Se corre la actualización nuevamente
-Y sale un error cnfiguraciones iniciales [https://tracker.moodle.org/browse/MDL-55757?focusedCommentId=451220&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-451220]
+- [x] ~~ Además Moodle sugiere que se active el módulo intl de PHP ~~
+- [x] ~~ Sugiere además que tu sitio esté tenga cifrado SSL ~~
+- [x] Se corre la actualización nuevamente
+- [x] Y sale un error configuraciones iniciales [https://tracker.moodle.org/browse/MDL-55757?focusedCommentId=451220&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-451220]
 
 ```mysql
 INSERT INTO `mdl_config` (`name`, `value`) 
@@ -127,4 +122,3 @@ VALUES
 ('defaultpreference_autosubscribe', '1'), 
 ('defaultpreference_trackforums', '0'); 
 ```
-
