@@ -96,3 +96,9 @@ sudo chmod -R 777 WEB/PATH/educacionmoodledata
 
 #### 2.3. Cambiar el archivo de configuracion
 Cambiar los valores por los suyos y segun la configuracion de la base de datos y su servidor en **WEB/PATH/educacionmoodle/config.php**
+
+#### 2.4. Desactivar el Modo Mantenimiento desde consola
+```
+/usr/bin/php admin/cli/maintenance.php --disable
+```
+
