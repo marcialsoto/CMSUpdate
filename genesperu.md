@@ -2,6 +2,7 @@
 WordPress 4.6.7 funciona con el tema Accelerate.
 
 # Plugins
+
 +------------------------------------+----------+-----------+---------+
 | name                               | status   | update    | version |
 +------------------------------------+----------+-----------+---------+
@@ -22,8 +23,10 @@ WordPress 4.6.7 funciona con el tema Accelerate.
 | youtube-widget-responsive          | active   | available | 1.3.2   |
 +------------------------------------+----------+-----------+---------+
 
+
 # Actualizacion de plugins
 No se puede actualizar los plugins WonderPlugin Carousel y WonderPlugin Slider Free por que son de pago. Success: Updated 11 of 11 plugins.
+
 +---------------------------+-------------+-------------+---------+
 | name                      | old_version | new_version | status  |
 +---------------------------+-------------+-------------+---------+
@@ -40,12 +43,9 @@ No se puede actualizar los plugins WonderPlugin Carousel y WonderPlugin Slider F
 | youtube-widget-responsive | 1.3.2       | 1.4.1       | Updated |
 +---------------------------+-------------+-------------+---------+
 
-# Actualizando el core
-Success: WordPress updated successfully.
-
-
 
 # Themes
+
 +----------------+----------+-----------+---------+
 | name           | status   | update    | version |
 +----------------+----------+-----------+---------+
@@ -56,7 +56,8 @@ Success: WordPress updated successfully.
 +----------------+----------+-----------+---------+
 
 # Actualizacion de themes
-Se decide no actualizar el theme accelerate, debido a que el diseno cambia totalmente en la actualizacion. Se decide actualizar los otros themes.
+Se decide no actualizar el theme accelerate, debido a que el diseno cambia totalmente en la actualizacion. Se decide actualizar los otros themes. 
+
 +---------------+-------------+-------------+---------+
 | name          | old_version | new_version | status  |
 +---------------+-------------+-------------+---------+
@@ -67,4 +68,9 @@ Se decide no actualizar el theme accelerate, debido a que el diseno cambia total
 
 # Se actualizan las traducciones
 Success: Updated 4/4 translations.
+
+## Se actualiza el core a la ultima version estable
+
+Updating to version 4.9 (es_ES)...
+Success: WordPress updated successfully.
 
