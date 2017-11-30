@@ -130,3 +130,26 @@ https://moodle.org/mod/forum/discuss.php?d=246152&parent=1068809
 UPDATE `mdl_config` SET value="es" WHERE name="lang"
 UPDATE `mdl_user` SET lang="es" WHERE lang="es_ar"
 ```
+
+## Proceso de Actualizacion
+
+Se desempaqueta la ultima version de Moodle (3.4)
+
+Se anade el ontetopic_format en la carpeta raiz/course/format
+
+Luego agregamos los themes en la carpeta raiz/theme
+
+Move your old Moodle software program files to another location. Do NOT copy new files over the old files.
+
+Unzip or unpack the upgrade file so that all the new Moodle software program files are in the location the old files used to be in on the server. Moodle will adjust SQL and moodledata if it needs to in the upgrade.
+
+Copy your old config.php file back to the new Moodle directory.
+
+As mentioned above, if you had installed any plugins on your site you should add them to the new code tree now. It is important to check that you get the correct version for your new version of Moodle. Be particularly careful that you do not overwrite any code in the new version of Moodle.
+
+Dont forget to also copy over your moodledata folder / directory. If you don't you will get a "fatal error $cfg- dataroot is not configured properly".
+
+
+cp moodle.backup/config.php moodle
+cp -pr moodle.backup/theme/mytheme moodle/theme/mytheme
+cp -pr moodle.backup/mod/mymod moodle/mod/mymod
