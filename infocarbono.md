@@ -1,7 +1,9 @@
 ## Situacion actual
+
 WordPress 4.5.10 funciona con el tema Theme InfoCarbono.
 
 ## Actualizaciones necesarias
+
 19
 
 ## Plugins
@@ -61,7 +63,7 @@ WordPress 4.5.10 funciona con el tema Theme InfoCarbono.
 +--------------------------+-------------+-------------+---------+
 
 
-## Listado de temas
+## Listado de themes
 
 +-------------------+----------+-----------+---------+
 | name              | status   | update    | version |

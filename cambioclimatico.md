@@ -1,10 +1,13 @@
+## Situacion inicial
+
 WordPress 3.0.1 running Biznetbox theme.
 
 Se ha actualizado todo manualmente
 
 741@@
 
-# Plugins
+# Plugins actualizados
+
  No ha sido posible actualizar el plugin Shockingly Big IE6 Warning, por que no tiene soporte desde hace dos anos (https://wordpress.org/plugins/shockingly-big-ie6-warning/) El mismo caso es el de The Future Is Now (https://wordpress.org/plugins/the-future-is-now/)
 
  +--------------------------------+----------+--------+---------+
@@ -41,4 +44,9 @@ Se ha actualizado todo manualmente
 +-----------+----------+--------+---------+
 
 
-Recomiendo utilizar otro theme, por que el activo tiene muchos errores de codigo y ademas esta desactualizado.
+Se recomienda reemplazar el theme biznetbox por  otro theme, por que tiene muchos errores de codigo y ademas esta desactualizado.
+
+## Se actualiza el core a la ultima version estable
+
+Updating to version 4.9 (es_ES)...
+Success: WordPress updated successfully.

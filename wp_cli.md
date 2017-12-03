@@ -41,7 +41,7 @@ wp plugin update --all
 wp theme list
 
 ## Actualizamos los themes
-wp theme update --all
+wp theme update --all --allow-root
 
 ## Actualizamos el core
 wp core update

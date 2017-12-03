@@ -2,9 +2,11 @@
 
 WordPress 3.8.1 running cop20_mod theme. Se recomienda cambiar contrasena
 
-## Plugins
+## Plugins actualizados
 
-Se actualizaron los siguientes plugins. WP Migrate DB Pro no se puede actulizar por ser de pago.
+Se actualizaron los siguientes plugins. 
+
+WP Migrate DB Pro no se puede actulizar por ser de pago.
 
 +----------------------------+-------------+-------------+---------+
 | name                       | old_version | new_version | status  |
@@ -63,7 +65,7 @@ Success: WordPress updated successfully.
 | user-role-editor                       | 4.17.2      | 4.37        | Updated |
 +----------------------------------------+-------------+-------------+---------+
 
-## Se instala el plugin Wordfence
+## Se instala el plugin Wordfence por seguridad
 
 +--------------------------------------+----------+--------+---------+
 | name                                 | status   | update | version |

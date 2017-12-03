@@ -5,7 +5,7 @@ WordPress 4.7.6 se está ejecutando con el tema CIISB.
 Requiere 12 actualizaciones
 
 
-## Plugins
+## Plugins instalados
 
 +---------------------------------------+----------+-----------+---------+
 | name                                  | status   | update    | version |
@@ -27,6 +27,9 @@ Requiere 12 actualizaciones
 | wordpress-importer                    | active   | none      | 0.6.3   |
 +---------------------------------------+----------+-----------+---------+
 
+
+## Plugins actualizados
+
 Se actualizaron los siguientes
 
 +-------------------------+-------------+-------------+---------+
@@ -43,7 +46,7 @@ Se actualizaron los siguientes
 +-------------------------+-------------+-------------+---------+
 Success: Updated 8 of 8 plugins.
 
-## Themes
+## Themes instalados
 
 +----------------+----------+-----------+---------+
 | name           | status   | update    | version |
@@ -53,6 +56,9 @@ Success: Updated 8 of 8 plugins.
 | twentyfourteen | inactive | available | 1.7     |
 | twentysixteen  | inactive | available | 1.2     |
 +----------------+----------+-----------+---------+
+
+
+## Themes actualizados
 
 Se actualizan los themes
 

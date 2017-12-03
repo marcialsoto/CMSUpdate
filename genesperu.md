@@ -1,4 +1,5 @@
 # Situacion inicial
+
 WordPress 4.6.7 funciona con el tema Accelerate.
 
 # Plugins

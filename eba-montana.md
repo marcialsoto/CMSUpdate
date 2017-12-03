@@ -38,3 +38,21 @@ Sitio	Paquete	3.3.4.1	3.5.1.1	No aplicable	Actualizar	https://update.joomla.org/
  	
 Spanish
 Sitio	Paquete	3.3.4.1	3.5.1.1	No aplicable	Actualizar	https://update.joomla.org/language/details3/es-ES_details.xml	
+
+## Situacion de las actualizaciones
+
+No se puede actualizar ni las extensiones ni el core de Joomla! por incongruencias en la base de datos.
+
+Actualización del manifiesto en caché fallido: La extensión actualmente no está instalada.
+
+Actualización del manifiesto en caché fallido: La extensión no es válida.
+
+http://jmd.io/articles/fixing-joomla-permission-issues/
+
+## Recomendacion
+
+Se deduce que se ha actualizado anteriormente, forzando la actualización del core y dejando las extensiones de lado, lo que ha generado inconsistencia en la información. 
+
+Se recomienda hacer ingeniería inversa e instalar el sitio desde una versión actualizada e ir migrando la información.
+
+Se adjuntan imagenes en la carpeta de Recursos del Anexo A.

@@ -2,7 +2,7 @@
 
 WordPress 4.0.20 funciona con el tema Avada.
 
-## Plugins
+## Plugins en la instalacion
 
 +----------------------------+----------+-----------+---------+
 | name                       | status   | update    | version |
@@ -18,6 +18,8 @@ WordPress 4.0.20 funciona con el tema Avada.
 | install.php                | dropin   | none      |         |
 +----------------------------+----------+-----------+---------+
 
+## plugin actualizados
+
 Se actualiza el plugin 
 
 +-----------+-------------+-------------+---------+
@@ -25,16 +27,6 @@ Se actualiza el plugin
 +-----------+-------------+-------------+---------+
 | wordfence | 6.3.11      | 6.3.21      | Updated |
 +-----------+-------------+-------------+---------+
-
-## Themes
-
-Los themes no requieren actualizacion
-
-+-------+--------+--------+---------+
-| name  | status | update | version |
-+-------+--------+--------+---------+
-| avada | active | none   | 3.6.1   |
-+-------+--------+--------+---------+
 
 ## Se actualiza el core a la ultima version estable
 

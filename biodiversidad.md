@@ -60,4 +60,7 @@ Tres requieren actualizacion
 +----------------+-------------+-------------+---------+
 
 
-## actualizamos el core
+## Se actualiza el core a la ultima version estable
+
+Updating to version 4.9 (es_ES)...
+Success: WordPress updated successfully.
